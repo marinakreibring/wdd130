@@ -22,7 +22,7 @@ main{
     background-color: #48aace;
 }
 body{
-    background-color:#48aace;
+    background-color:white;
 }
 header{
     background-color: white;
@@ -44,7 +44,7 @@ nav a:hover{
     background-color: white;
 }
 footer{
-    background-color: #48aace;
+    background-color: #fec001;
 }
 .home-title{
     background-color: #48aace;
@@ -63,7 +63,6 @@ footer h3{
     color: white;
 }
 footer a{
-    background-color: #fec001;
     color: #02266e;
     text-decoration: none;
 }
@@ -81,7 +80,7 @@ footer a:hover{
     width: 100%;
 }
 footer p{
-    text-size: 1.2em;
+    font-size: 1.2em;
 }
 footer p a:hover{
     text-decoration: underline;
