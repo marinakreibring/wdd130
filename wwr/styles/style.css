@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&family=Merriweather:wght@300&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -7,12 +9,17 @@ nav a{
     background-color: #fec001;
     color: #02266e;
     text-decoration: none;
+    font-family: Merriweather, Arial, sans-serif;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
+    
 }
 .button-box{
     text-align: center;
+    font-family: Merriweather, Arial, sans-serif;
+    
 }
 main{
     text-align: center;
@@ -23,6 +30,10 @@ main{
 }
 body{
     background-color:white;
+    font-family: Merriweather, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: white;
@@ -30,58 +41,102 @@ header{
 nav a:hover{
     background-color: #48aace;
     color: white;
+    font-family: Merriweather, Arial, sans-serif;
 }
 .book, .join{
-    background-color: white;
-    color: #276696;
+    background-color: #fec001;
+    color: #02266e;
     text-decoration: none;
+    font-family: Merriweather, Arial, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: #48aace;
     color: white;
+    font-family: Merriweather, Arial, sans-serif;
 }
 .msg{
     background-color: white;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer{
     background-color: #fec001;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title{
     background-color: #48aace;
     color: white;
+    font-family: Lemonada, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+
 }
 h4{
     color: #276696;
 }
+h2{
+    margin: 0;
+}
 .msg h2{
     color: #276696;
+    font-family: Lemonada, Helvetica, sans-serif;
 }
 .msg p{
-    color: #48aace;
+    background-color: #48aace;
+    color: white;
+    font-family: Merriweather, Arial, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer h3{
     color: white;
+    font-family: Merriweather, Arial, sans-serif;
 }
 footer a{
     color: #02266e;
     text-decoration: none;
+    font-family: Merriweather, Arial, sans-serif;
 }
 footer a:hover{
     background-color: #48aace;
     color: white;
+    font-family: Merriweather, Arial, sans-serif;
 }
 .logo{
     width: 80px;
 }
+#logo_link{
+    padding-top: 5px;
+}
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img{
     width: 100%;
 }
 footer p{
     font-size: 1.2em;
+    font-family: Merriweather, Arial, sans-serif;
 }
 footer p a:hover{
     text-decoration: underline;
+    font-family: Merriweather, Arial, sans-serif;
+}
+footer .social img{
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #fec001;
+}
+main section img{
+    box-sizing: border-box;
 }
