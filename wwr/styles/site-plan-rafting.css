@@ -5,14 +5,14 @@ Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&family=Merriweather:wght@300&display=swap');
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #276696   ;
-  --secondary-color: #48aace ;
+  --primary-color: #276696;
+  --secondary-color: #48aace;
   --accent1-color: #f0b812;
   --accent2-color: #02266e;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Lemonada;
-  --paragraph-font: Merriweather, Helvetica, sans-serif;
+  --heading-font: Lemonada, Helvetica, sans-serif; 
+  --paragraph-font: Merriweather, Arial, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #276696;  /* headlines on a white background */ 
