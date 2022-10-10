@@ -195,6 +195,51 @@ footer p a:hover{
 footer .social img{
     padding-top: 15px;
 }
+/* css for page rates */
+#rates-background{
+    background-color: #02266e;
+}
+#rates-tytle{
+    margin-top: 100px;
+    color: #276696;
+    font-family: Lemonada, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+.rates{
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+    margin: 50px;
+}
+.rates-img{
+    width: 50%;
+    border: 10px solid #fec001;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #48aace;
+    float: left;
+    
+}
+.rates-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+.rates h2{
+    color: #48aace;
+    font-family: Lemonada, Helvetica, sans-serif;
+    
+}
+.rates p{
+    color: #02266e;
+    font-family: Merriweather, Arial, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.rates h3{
+    font-family: Merriweather, Arial, sans-serif;
+    font-size: .6em;
+    font-style: italic;
+}
+/* scc for page rates end */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
