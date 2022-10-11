@@ -197,7 +197,13 @@ footer .social img{
 }
 /* css for page rates */
 #rates-background{
-    background-color: #02266e;
+    background-color: #fec001;
+}
+#rates-background nav a{
+    color: #02266e;
+}
+#rates-background nav a:hover{
+    color: white;
 }
 #rates-tytle{
     margin-top: 100px;
@@ -232,7 +238,7 @@ footer .social img{
     color: #02266e;
     font-family: Merriweather, Arial, sans-serif;
     font-size: .8em;
-    padding-bottom: 15px;
+    margin: 1.5em;
 }
 .rates h3{
     font-family: Merriweather, Arial, sans-serif;
