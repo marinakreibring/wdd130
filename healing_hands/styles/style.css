@@ -1,26 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Paprika&display=swap');
-:root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #42a7d6 ;
-    --secondary-color: #255277 ;
-    --accent1-color: #95c025;
-    --accent2-color: #eefac2;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: "Paprika", cursive, sans-serif;
-    --paragraph-font: "Abyssinica SIL", serif, Helvetica;
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #42a7d6;  /* headlines on a white background */ 
-    --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #95c025; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #eefac2; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #42a7d6 ;
-    --nav-link-color: #255277;
-    --nav-background-color: #c8df8b;
-    --nav-hover-link-color: #eefac2;
-    --nav-hover-background-color: #b4abb2;
-  }
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -34,14 +13,13 @@ header{
 nav{
     display: flex;
     justify-content: space-around;
-    font-size: 1.5em;
 }
 nav a{
     text-align: center;
     color: #255277;
     text-decoration: none;
     font-family: "Abyssinica_SIL", serif, Helvetica;
-    padding: 35px;
+    padding: 30px;
 }
 nav a:hover{
     background-color: #b4abb2;
@@ -56,19 +34,18 @@ nav a:hover{
     justify-self: center;
     align-self: center;
 }
-#home-box{
-    display: inline-block;
-}
 #home-grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 30px auto;
 }
-#home-img{
+#home-pic{
     grid-column: 1/2;
     grid-row: 1/3;
-    width: 100%;
     z-index: -1;
+}
+#home-img{
+    width: 100%;
 }
 #home-msg{
     grid-row: 1/2;    
@@ -85,8 +62,7 @@ nav a:hover{
 }
 .intro{
     display: inline-block;
-    margin: 30px 0;
-    width: 100%;
+    margin-top: 30px;
     height: max-content;
     padding: 50px;
     font-family: "Abyssinica SIL", serif, Helvetica;
@@ -109,9 +85,9 @@ nav a:hover{
     
 }
 .client{
-    width: 100%;
     grid-column: 2/6;
     grid-row: 2/6;
+    height: 100%;
 }
 .msg{
     grid-column: 5/10;
@@ -127,7 +103,7 @@ nav a:hover{
 .msg p{
     color: white;
     font-family: "Abyssinica SIL", serif, Helvetica;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
 }
 .button-box{
