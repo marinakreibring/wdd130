@@ -1,26 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Paprika&display=swap');
-:root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #42a7d6 ;
-    --secondary-color: #255277 ;
-    --accent1-color: #95c025;
-    --accent2-color: #eefac2;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: "Paprika", cursive, sans-serif;
-    --paragraph-font: "Abyssinica SIL", serif, Helvetica;
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #42a7d6;  /* headlines on a white background */ 
-    --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #95c025; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #eefac2; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #42a7d6 ;
-    --nav-link-color: #255277;
-    --nav-background-color: #c8df8b;
-    --nav-hover-link-color: #eefac2;
-    --nav-hover-background-color: #b4abb2;
-  }
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -34,14 +12,13 @@ header{
 nav{
     display: flex;
     justify-content: space-around;
-    font-size: 1.5em;
 }
 nav a{
     text-align: center;
     color: #255277;
     text-decoration: none;
     font-family: "Abyssinica_SIL", serif, Helvetica;
-    padding: 35px;
+    padding: 30px;
 }
 nav a:hover{
     background-color: #b4abb2;
@@ -56,26 +33,28 @@ nav a:hover{
     justify-self: center;
     align-self: center;
 }
-#home-box{
-    display: inline-block;
-}
 #home-grid{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 30px auto;
+    grid-template-columns: 1600px;
+    margin-top: 10px;
 }
-#home-img{
+#home-pic{
     grid-column: 1/2;
     grid-row: 1/3;
-    width: 100%;
     z-index: -1;
 }
+#home-img{
+    width: 100%;
+    box-sizing: border-box;
+}
 #home-msg{
+    grid-column: 1/2;
     grid-row: 1/2;    
 }
 #home-msg h1{
     text-align: center;  
-    margin-top: 20px;  
+      
 }
 .home-title{
     color: #255277;
@@ -85,20 +64,29 @@ nav a:hover{
 }
 .intro{
     display: inline-block;
-    margin: 30px 0;
-    width: 100%;
+    margin-top: 30px;
     height: max-content;
     padding: 50px;
     font-family: "Abyssinica SIL", serif, Helvetica;
     font-size: 1.5em;
-    text-align: center;
     color: #255277;
     border-top: 10px solid #95c025;
     border-bottom: 10px solid #95c025;
 }
+.intro h1{
+    text-align: center;
+}
+.intro h2{
+    text-align: center;
+    font-family: "Paprika", cursive, sans-serif;
+    color: #42a7d6;
+}
+.intro p{
+    text-align: left;
+}
 #client-grid{
     display: grid;
-    grid-template-columns: repeat (10, 150px);
+    grid-template-columns: 150px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 150px;
     grid-template-rows: 50px 1fr 1fr 1fr 1fr 50px;
     margin-top: 30px;
 }
@@ -106,34 +94,39 @@ nav a:hover{
     grid-column: 1/11;
     grid-row: 1/7;
     background-color: #eefac2;
-    
 }
 .client{
-    width: 100%;
     grid-column: 2/6;
     grid-row: 2/6;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #95c025;
 }
 .msg{
     grid-column: 5/10;
     grid-row: 3/5;
     background-color: #42a7d6;
+    box-shadow: 5px 5px 10px #95c025;
 }
 
 .msg h2{
     color: #eefac2;
     font-family: "Paprika", cursive, sans-serif;
     text-align: center;
+    font-size: smaller;
 }
 .msg p{
     color: white;
     font-family: "Abyssinica SIL", serif, Helvetica;
-    padding: 15px;
+    font-size: smaller;
     text-align: center;
 }
 .button-box{
 text-align: center;
+padding: 10px;
 }
-.contact{
+.contact-me{
     background-color: #c8df8b;
     color: #255277;
     text-decoration: none;
@@ -143,19 +136,19 @@ text-align: center;
     margin-top: 50px;
     border-radius: 5px;
 }
-.contact:hover{
+.contact-me:hover{
     background-color: #b4abb2;
     color: #eefac2
 }
 
 footer{
     background-color: #c8df8b;
+    color: #255277;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.5em;
 }
 footer a{
     color: #255277;
@@ -176,4 +169,84 @@ footer p a:hover{
 }
 footer .social img{
     padding-top: 15px;
+}
+
+/*css for the form on contact me page*/
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
 }
