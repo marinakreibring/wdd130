@@ -75,6 +75,7 @@ nav a:hover{
 }
 .intro h1{
     text-align: center;
+    color: #42a7d6;
 }
 .intro h2{
     text-align: center;
@@ -140,6 +141,13 @@ padding: 10px;
     background-color: #b4abb2;
     color: #eefac2
 }
+.messenger{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 300px;
+}
+
 
 footer{
     background-color: #c8df8b;
